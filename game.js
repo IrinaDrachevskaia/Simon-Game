@@ -60,6 +60,13 @@ $(document).keypress(function(event) {
   }
 });
 
+$("h1").on("click", function() {
+  if (!started){
+    started = true;
+    nextSequence();
+  }
+});
+
 $(".btn").on("click", function () {
     var userChosenColour = this.id;
     userClickedPattern.push(userChosenColour);
